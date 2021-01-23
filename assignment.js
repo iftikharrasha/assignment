@@ -1,3 +1,5 @@
+//https://github.com/iftikharrasha/assignment
+
 function kilometerToMeter(length){
     return length*1000;
 }
@@ -26,6 +28,24 @@ function hotelCost(cost){
     }
 }
 
+function megaFriend(friends){
+        var longName;
+        return longName;
+}
+
+function megaFriend(friends){
+    var longName;
+    var flag = 0;
+
+    for (var i = 0; i < friends.length; i++) {
+        if (friends[i].length > flag) {
+            var flag = friends[i].length;
+            longName = friends[i];
+        }
+    }
+    return longName;
+}
+
 var getKilo = kilometerToMeter(7);
 console.log("7 kilometer = ", getKilo, "Meter");
 
@@ -34,3 +54,7 @@ console.log("My total budget is = ", getBudget);
 
 var getHotelCost = hotelCost(19);
 console.log("My hotel cost is = ", getHotelCost);
+
+var friends = ["Rakibul", "Iftikharrasha", "Ramakantakamar Shaheb", "Shofiq"];
+var myMegaFriend = megaFriend(friends);
+console.log("My mega friend is = ", myMegaFriend);
